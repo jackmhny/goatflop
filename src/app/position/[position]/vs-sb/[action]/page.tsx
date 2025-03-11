@@ -47,7 +47,7 @@ export default function VsSBStrategyPage({
           <div className="w-[73px]"></div> {/* Spacer for even centering */}
         </div>
         
-        <Link href={`/position/${position}/vs-sb`} className="block w-full h-auto aspect-[4/3] relative">
+        <Link href="/" className="block w-full h-auto aspect-[4/3] relative">
           <Image
             src={`/images/${filename}`}
             alt={`${positionLabels[position]} vs ${positionLabels["SB"]} when SB ${actionLabel}`}

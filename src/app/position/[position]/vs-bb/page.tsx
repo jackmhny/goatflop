@@ -32,7 +32,7 @@ export default function VsBBPage({
           <div className="w-[73px]"></div> {/* Spacer for even centering */}
         </div>
         
-        <Link href={`/position/${position}`} className="block w-full h-auto aspect-[4/3] relative">
+        <Link href="/" className="block w-full h-auto aspect-[4/3] relative">
           <Image
             src={`/images/${filename}`}
             alt={`${positionLabels[position]} vs ${positionLabels["BB"]} Strategy`}

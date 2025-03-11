@@ -56,7 +56,7 @@ export default function VsOpenOOPStrategyPage({
           <div className="w-[73px]"></div> {/* Spacer for even centering */}
         </div>
         
-        <Link href={`/position/${position}/vs-open-oop`} className="block w-full h-auto aspect-[4/3] relative">
+        <Link href="/" className="block w-full h-auto aspect-[4/3] relative">
           <Image
             src={`/images/${filename}`}
             alt={`${positionLabels[position]} vs ${positionLabels[villain]} (OOP)`}
