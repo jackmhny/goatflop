@@ -62,7 +62,7 @@ export default function RFIPage({ params }: { params: { position: string } }) {
             <Button variant="outline">Back</Button>
           </Link>
           <h1 className="text-2xl font-bold text-center">
-            {positionLabels[position]} Opening Range
+            {positionLabels[position]} <span className="opacity-80">({position})</span> Opening Range
           </h1>
           <div className="w-[73px]"></div> {/* Spacer for even centering */}
         </div>

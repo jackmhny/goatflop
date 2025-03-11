@@ -26,7 +26,7 @@ export default function VsSBPage({ params }: { params: { position: string } }) {
             <Button variant="outline">Back</Button>
           </Link>
           <h1 className="text-2xl font-bold text-center">
-            {positionLabels[position]} vs {positionLabels["SB"]}
+            {positionLabels[position]} <span className="opacity-80">({position})</span> vs {positionLabels["SB"]} <span className="opacity-80">(SB)</span>
           </h1>
           <div className="w-[73px]"></div> {/* Spacer for even centering */}
         </div>
@@ -43,7 +43,7 @@ export default function VsSBPage({ params }: { params: { position: string } }) {
                 className="w-full"
               >
                 <Button size="xl" className="w-full">
-                  {action.label}
+                  <span>{action.label}</span>
                 </Button>
               </Link>
             ))}

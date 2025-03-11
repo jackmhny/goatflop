@@ -75,7 +75,9 @@ export default function PositionPage({ params }: { params: { position: string } 
           <Link href="/">
             <Button variant="outline">Back</Button>
           </Link>
-          <h1 className="text-3xl font-bold text-center">{positionLabels[position]}</h1>
+          <h1 className="text-3xl font-bold text-center">
+            {positionLabels[position]} <span className="opacity-80">({position})</span>
+          </h1>
           <div className="w-[73px]"></div> {/* Spacer for even centering */}
         </div>
         

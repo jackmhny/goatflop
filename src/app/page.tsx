@@ -53,7 +53,7 @@ export default function Home() {
                   className="w-full flex flex-col"
                 >
                   <span>{positionLabels[position]}</span>
-                  <span className="text-xs opacity-80 mt-1">({position})</span>
+                  <span className="text-sm opacity-80 mt-1">({position})</span>
                 </Button>
               </Link>
             ))}

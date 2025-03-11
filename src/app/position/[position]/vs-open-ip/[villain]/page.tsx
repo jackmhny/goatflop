@@ -45,7 +45,7 @@ export default function VsOpenIPStrategyPage({
             <Button variant="outline">Back</Button>
           </Link>
           <h1 className="text-xl md:text-2xl font-bold text-center">
-            {positionLabels[position]} vs {positionLabels[villain]} Open (IP)
+            {positionLabels[position]} <span className="opacity-80">({position})</span> vs {positionLabels[villain]} <span className="opacity-80">({villain})</span> Open (IP)
           </h1>
           <div className="w-[73px]"></div> {/* Spacer for even centering */}
         </div>

@@ -37,7 +37,7 @@ export default function VsOpenIPPage({ params }: { params: { position: string } 
             <Button variant="outline">Back</Button>
           </Link>
           <h1 className="text-2xl font-bold text-center">
-            {positionLabels[position]} vs Opens (IP)
+            {positionLabels[position]} <span className="opacity-80">({position})</span> vs Opens (IP)
           </h1>
           <div className="w-[73px]"></div> {/* Spacer for even centering */}
         </div>
@@ -54,8 +54,9 @@ export default function VsOpenIPPage({ params }: { params: { position: string } 
                   key={villainPos}
                   className="w-full"
                 >
-                  <Button size="xl" className="w-full">
-                    {positionLabels[villainPos]}
+                  <Button size="xl" className="w-full flex flex-col">
+                    <span>{positionLabels[villainPos]}</span>
+                    <span className="text-sm opacity-80 mt-1">({villainPos})</span>
                   </Button>
                 </Link>
               ))}

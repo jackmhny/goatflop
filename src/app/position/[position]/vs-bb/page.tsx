@@ -27,7 +27,7 @@ export default function VsBBPage({
             <Button variant="outline">Back</Button>
           </Link>
           <h1 className="text-xl md:text-2xl font-bold text-center">
-            {positionLabels[position]} vs {positionLabels["BB"]}
+            {positionLabels[position]} <span className="opacity-80">({position})</span> vs {positionLabels["BB"]} <span className="opacity-80">(BB)</span>
           </h1>
           <div className="w-[73px]"></div> {/* Spacer for even centering */}
         </div>
